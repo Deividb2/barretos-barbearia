@@ -1,0 +1,13 @@
+<section class="services">
+    <div class="services__title">
+        <h2>SERVIÇOS</h2>
+    </div>
+
+    <div class="cards">
+        <app-card *ngFor="let card of Services">
+            <app-card-title>{{ card.title }}</app-card-title>
+            <app-card-text>{{ card.text }}</app-card-text>
+            <app-card-price>R${{ card.price }}</app-card-price>
+        </app-card>
+    </div>
+</section>

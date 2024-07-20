@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    transition: all .5s ease;
+    
+    .header_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        .header_menu-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            padding: .2rem;
+            border-radius: .2rem;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .header_menu-logo {
+            font-size: 1.5rem;
+            color: #F96332;
+        }
+    }
+
+    .header_nav {
+        height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        transition: all 1s linear;
+        
+        .header_nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: .8rem 1.2rem;
+            list-style: none;
+
+            li a {
+                font-size: 1rem;
+                font-weight: 800;
+                text-decoration: none;
+                color: #35363A;
+            }
+        }
+    }
+
+    .btn {
+        padding: .6rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        background-color: #515151;
+        border-radius: .7rem;
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000;
+
+        .header_menu {
+            .header_menu-btn {
+                display: none;
+            }
+
+            .header_menu-logo {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: orangered;
+            }
+        }
+
+        .header_nav {
+            height: 100%;
+            background-color: transparent;
+
+            .header_nav-list {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}

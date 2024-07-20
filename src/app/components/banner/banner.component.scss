@@ -1,0 +1,80 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+    background: url(https://megaprofissional.com.br/upload/blog/29/mega-profissional-dicas-para-quem-esta-comecando-na-barbearia-entrevista-com-ayrton-alexander-do-canal-barbeiros-de-sucesso-1-media.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: #00000092;
+    color: #fff;
+
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+
+        .banner__content--title {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .banner__content--subtitle {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .banner__content--buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #fff;
+                background-color: #F96332;
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .banner {
+        .banner__content {
+            .banner__content--buttons {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .banner {
+        .banner__content {
+            .banner__content--title {
+                font-size: 3rem;
+            }
+
+            .banner__content--subtitle {
+                font-size: 1.5rem;
+            }
+
+            .banner__content--buttons {
+                gap: 2rem;
+
+                a {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

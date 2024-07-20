@@ -1,0 +1,17 @@
+<header>
+    <div class="header_menu">
+        <div class="header_menu-btn" (click)="changeIcon()">
+            <ng-icon [name]="menuAtualIcon"></ng-icon>
+        </div>
+        <h1 class="header_menu-logo">Barretos Barbearia</h1>
+    </div>
+    <nav class="header_nav" [class.openMenu]="hendleMenuIcon">
+        <ul class="header_nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
