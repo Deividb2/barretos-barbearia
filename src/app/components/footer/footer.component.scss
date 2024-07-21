@@ -1,0 +1,105 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .footer__content--title h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .footer__content--nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .footer__content--nav_lists {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                h4 {
+                    font-size: 1.2rem;
+                    color: #F96332;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .2rem;
+
+                    li a {
+                        text-decoration: none;
+                        padding-left: .5rem;
+                        color: #141414;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__copy {
+        border-top: 1px solid #000;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(min-width: 768px) {
+    footer {
+        min-height: 75vh;
+        padding-top: 2.2rem;
+
+        .footer__content {
+            gap: 2.5rem;
+
+            .footer__content--nav {
+                flex-direction: row;
+                justify-content: space-around;
+
+                .footer__content--nav_lists {
+                    ul {
+                        li a {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    footer {
+        min-height: 65vh;
+        .footer__content {
+            .footer__content--nav {
+                padding: 0 3rem; 
+            }
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    footer {
+        .footer__content {
+            .footer__content--nav {
+                justify-content: center;
+                gap: 7rem;
+            }
+        }
+    }
+}

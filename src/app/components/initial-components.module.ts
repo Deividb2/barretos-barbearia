@@ -14,6 +14,7 @@ import { CardTextDirective } from './services-card/directives/card-text.directiv
 import { CardPriceDirective } from './services-card/directives/card-price.directive';
 import { WhatsBtnComponent } from './whats-btn/whats-btn.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     CardPriceDirective,
     WhatsBtnComponent,
     AboutUsComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -40,6 +42,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     CardComponent,
     WhatsBtnComponent,
     AboutUsComponent,
+    FooterComponent
   ]
 })
 export class InitialComponentsModule { }
