@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { InitialComponentsModule } from './components/initial-components.module';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { InitialComponentsModule } from './components/initial-components.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InitialComponentsModule
+    InitialComponentsModule,
+    FormsModule
 
   ],
   providers: [],
