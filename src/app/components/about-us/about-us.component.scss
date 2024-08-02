@@ -53,21 +53,28 @@
 }
 
 @media(min-width: 1024px) {
-    .about .about__content {
-        grid-template-columns: 40vw 1fr;
-        padding: 4rem 2rem;
+    .about {
+        .about__content {
+            grid-template-columns: 40vw 1fr;
+            padding: 4rem 2rem;
 
-        .about__content--title {
-            font-size: 2rem;
-            text-align: start;
+            .about__content--title {
+                font-size: 2rem;
+                text-align: start;
+            }
+
+            .about__content--text {
+                grid-template-columns: 1fr 1fr;
+
+                &__p {
+                    grid-column: 1/3;
+                }
+            }
         }
 
-        .about__content--text {
-            grid-template-columns: 1fr 1fr;
-
-            &__p {
-                grid-column: 1/3;
-            }
+        .about__img {
+            height: 70vh;
+            background-attachment: fixed;
         }
     }
 }

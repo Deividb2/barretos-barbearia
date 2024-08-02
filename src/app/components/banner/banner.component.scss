@@ -5,9 +5,6 @@
     min-height: 100vh;
     padding: 0 1rem;
     background: url(https://megaprofissional.com.br/upload/blog/29/mega-profissional-dicas-para-quem-esta-comecando-na-barbearia-entrevista-com-ayrton-alexander-do-canal-barbeiros-de-sucesso-1-media.jpg) no-repeat center center / cover;
-
-    // background: url(https://diariodocomercio.com.br/wp-content/uploads/2024/01/barbearia-por-assinatura-belo-horizonte.jpg) no-repeat center center / cover;
-
     background-attachment: fixed;
     background-blend-mode: color;
     background-color: #00000092;
@@ -41,9 +38,15 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 color: #fff;
-                background-color: #F96332;
+                background-color: #FF4500;
                 padding: 1rem 1.5rem;
                 border-radius: 1rem;
+                transition: background-color .5s ease;
+
+                &:hover {
+                    background-color: #141414;
+                    color: #FF4500;
+                }
             }
         }
     }
@@ -75,7 +78,7 @@
 
                 a {
                     font-size: 1.2rem;
-                    font-weight: 400;
+                    font-weight: 700;
                 }
             }
         }
