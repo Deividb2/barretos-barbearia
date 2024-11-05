@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { ionLogoWhatsapp as whats } from '@ng-icons/ionicons'
 
 @Component({
   selector: 'app-whats-btn',
+  standalone: true,
+  imports: [NgIconComponent],
+  providers: [provideIcons({ whats })],
   templateUrl: './whats-btn.component.html',
   styleUrl: './whats-btn.component.scss'
 })
